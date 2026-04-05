@@ -85,10 +85,10 @@ Backend:
   git clone <your-repo-link>
   cd Financial-DashboardFrontend-Tradebook-
 
-2. Install frontend dependencies
+3. Install frontend dependencies
    npm install
 
-3. API Configuration
+4. API Configuration
 
 The frontend is currently configured to connect to the backend running locally:
 http://localhost:5000
