@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  background-color: #111827; /* Tailwind's bg-gray-900 */
+}
+
+/* ==== Custom Modal Styles ==== */
+.logout-modal {
+  background-color: #1e2633;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 20rem;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3),
+              0 0 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transform: scale(0.95);
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes scaleIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease forwards;
+}
+
+/* Dark Theme for React DatePicker */
+.custom-calendar {
+  background-color: #1f2937 !important; /* gray-800 */
+  border: 1px solid #374151 !important; /* gray-700 */
+  color: white !important;
+  border-radius: 0.75rem !important;
+  padding: 8px !important;
+}
+
+.custom-calendar .react-datepicker__day {
+  color: #d1d5db !important; /* gray-300 */
+}
+
+.custom-calendar .react-datepicker__day--selected,
+.custom-calendar .react-datepicker__day--keyboard-selected {
+  background-color: #16a34a !important; /* green-600 */
+  color: white !important;
+  border-radius: 9999px !important;
+}
+
+.custom-calendar .react-datepicker__day:hover {
+  background-color: #15803d !important; /* green-700 */
+  color: white !important;
+  border-radius: 9999px !important;
+}
+
+.custom-calendar .react-datepicker__header {
+  background-color: #111827 !important; /* gray-900 */
+  border-bottom: 1px solid #374151 !important;
+}
+
+.custom-calendar .react-datepicker__current-month,
+.custom-calendar .react-datepicker-time__header,
+.custom-calendar .react-datepicker-year-header {
+  color: #22c55e !important; /* green-500 */
+}
+
+.custom-calendar-popper {
+  z-index: 9999 !important; /* ensure it shows on top */
+}
