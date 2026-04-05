@@ -82,24 +82,26 @@ Backend:
 
 1. Clone the repository
 
-git clone <your-repo-link>
-cd Financial-DashboardFrontend-Tradebook-
+  git clone <your-repo-link>
+  cd Financial-DashboardFrontend-Tradebook-
 
 2. Install frontend dependencies
-npm install
+   npm install
 
 3. API Configuration
+
 The frontend is currently configured to connect to the backend running locally:
 http://localhost:5000
 Make sure the backend server is running before starting the frontend.
 If deploying the project, API URLs can be updated to match the deployed backend.
 
-4. Start Frontend
+5. Start Frontend
+
 npm run dev
 Frontend will run on:
 http://localhost:5173
 
-5. Setup and start backend (required)
+7. Setup and start backend (required)
 Please refer to the backend repository for setup instructions.
 
 Note :-
