@@ -78,34 +78,41 @@ Backend:
 - Express.js
 - MongoDB
 
-## Local Setup Instructions
+## ⚙️ Local Setup Instructions
 
-1. Clone the repository
+### 1. Clone the repository
+git clone <your-repo-link>  
+cd Financial-DashboardFrontend-Tradebook-
 
-  git clone <your-repo-link>
-  cd Financial-DashboardFrontend-Tradebook-
+---
 
-3. Install frontend dependencies
-   npm install
+### 2. Install frontend dependencies
+npm install
 
-4. API Configuration
+---
 
-The frontend is currently configured to connect to the backend running locally:
-http://localhost:5000
-Make sure the backend server is running before starting the frontend.
-If deploying the project, API URLs can be updated to match the deployed backend.
+### 3. API Configuration
+The frontend is currently configured to connect to the backend running locally:  
+http://localhost:5000  
 
-5. Start Frontend
+Make sure the backend server is running before starting the frontend.  
+If deploying the project, update API URLs to match the deployed backend.
 
-npm run dev
-Frontend will run on:
+---
+
+### 4. Start the frontend
+npm run dev  
+
+Frontend will run on:  
 http://localhost:5173
 
-7. Setup and start backend (required)
-Please refer to the backend repository for setup instructions.
+---
 
-Note :-
-Make sure:
-Backend is running before using the frontend
-API calls are configured to:
-http://localhost:5000
+### 5. Setup and start backend (required)
+👉 Please refer to the backend repository for setup instructions.
+
+---
+
+### ⚠️ Important Notes
+- Ensure backend is running before using the frontend  
+- API calls should point to: http://localhost:5000  
